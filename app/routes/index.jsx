@@ -1,3 +1,5 @@
+
+
 export const meta = () => {
     return {
       title: 'Hydrogen',
@@ -28,9 +30,18 @@ export const meta = () => {
     return(
         <div  className="NavBarMain"> 
             <div className="NavBarInner">
+                <NavBarLogo />
                 <p>navbar</p>
             </div>
             
+        </div>
+    );
+  };
+
+  function NavBarLogo(){
+    return(
+        <div className="NavBarLogo">
+            <img src="https://cdn.shopify.com/s/files/1/0746/5218/8974/files/selflovelogo.png?v=1680721471" alt="image" />
         </div>
     );
   };
