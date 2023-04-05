@@ -31,7 +31,9 @@ export const meta = () => {
         <div  className="NavBarMain"> 
             <div className="NavBarInner">
                 <NavBarLogo />
-                <p>navbar</p>
+                <NavBarOptions />
+                <NavBarSearch />
+                <NavBarCart />
             </div>
             
         </div>
@@ -45,6 +47,30 @@ export const meta = () => {
         </div>
     );
   };
+
+  function NavBarSearch(){
+    return(
+        <div className="NavBarSearch">
+            <p> search</p>
+        </div>
+    );
+  };
+
+  function NavBarOptions(){
+    return(
+        <div className="NavBarOptions">
+            <p> this is tyhe options </p>
+        </div>
+    );
+  };
+
+  function NavBarCart(){
+    return(
+        <div className="NavBarCart">
+            <p>  cart </p>
+        </div>
+    );
+  };
   function Announcement(){
     return(
         <div  className="AnnounceMain">
@@ -54,8 +80,27 @@ export const meta = () => {
   };
   function Body(){
     return(
-        <div>
-            <p>body</p>            
+        <div className="bodyMain">
+            <SlideShow />
+        </div>
+    );
+  };
+
+  function SlideShow(){
+    return(
+        <div className="slideShow"> 
+            <div className="slideShowCard">
+               <SlideShowInner />
+            </div>
+            <img className="imagSlideShow" src="https://cdn.shopify.com/s/files/1/0746/5218/8974/files/andrey-k-Ng9yfijbe0A-unsplash_1.jpg?v=1680723691" alt="image" />
+        </div>
+    );
+  };
+
+  function SlideShowInner(){
+    return(
+        <div className="SlideShowInner">
+            <p>hello</p>
         </div>
     );
   };
